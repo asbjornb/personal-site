@@ -41,7 +41,7 @@ module.exports = function(eleventyConfig) {
             output: "_site",
             layouts: "layouts",
             includes: "includes",
-            data: "_data"
+            data: "data"
         },
         passthroughFileCopy: true
     }
