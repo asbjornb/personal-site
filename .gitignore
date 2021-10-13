@@ -1,2 +1,7 @@
 node_modules/
 _site/
+
+# Ignore notes
+content/notes/**
+# Except directory data file
+!content/notes/notes.11tydata.js
