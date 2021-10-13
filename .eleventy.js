@@ -29,15 +29,15 @@ module.exports = function(eleventyConfig) {
     eleventyConfig.setLibrary('md', md);
     
     eleventyConfig.addCollection("notes", function (collection) {
-        return collection.getFilteredByGlob(["notes/**/*.md", "index.md"]);
+        return collection.getFilteredByGlob(["content/notes/**/*.md", "index.md"]);
     });
     
-    eleventyConfig.addPassthroughCopy('assets');
     eleventyConfig.setUseGitIgnore(false);
+    eleventyConfig.addPassthroughCopy('content/assets');
 
     return {
         dir: {
-            input: "./",
+            input: "./content/",
             output: "_site",
             layouts: "layouts",
             includes: "includes",
