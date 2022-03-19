@@ -31,6 +31,10 @@ module.exports = function(eleventyConfig) {
     eleventyConfig.addCollection("notes", function (collection) {
         return collection.getFilteredByGlob(["notes/**/*.md", "index.md"]);
     });
+
+    eleventyConfig.addCollection("blogpost", function (collection) {
+        return collection.getFilteredByGlob(["blog/**/*.md", "index.njk"]);
+    });
     
     eleventyConfig.addPassthroughCopy('assets');
     eleventyConfig.setUseGitIgnore(false);

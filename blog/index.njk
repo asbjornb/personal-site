@@ -1,0 +1,15 @@
+---
+layout: default.html
+pagination:
+  data: collections.blogpost
+  size: 10
+  alias: blog
+---
+
+<ul>
+  {%- for post in collections.blogpost | reverse -%}
+    <li>
+      <h3><a href="{{ post.url | url }}">{{ post.data.title }}</a></h3>
+    </li>
+  {%- endfor -%}
+</ul>
