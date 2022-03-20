@@ -1,6 +1,6 @@
 {
-    "title": "John Lemmon",
-    "desc": "1-2 sentences about the site (optional)",
-    "author": "John Lemmon",
-    "baseurl": "https://eleventy-garden.netlify.app"
+    "title": "TBD",
+    "desc": "A small site mostly to play with static sites and share some thoughts and rough writing on tech, data and programming.",
+    "author": "Asbjørn Brandt",
+    "baseurl": "https://tbd.netlify.app"
 }
