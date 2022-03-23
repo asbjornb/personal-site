@@ -157,4 +157,14 @@ blockquote{
     margin-left: 10px;
     font-style: italic;
 }
+
+.sideimg{
+    float: right;
+    clear: right;
+    margin-right: -60%;
+    width: 50%;
+    margin-top: 0;
+    margin-bottom: 0;
+    vertical-align: baseline;
+    position: relative; 
 }
