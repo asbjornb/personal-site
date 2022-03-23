@@ -10,6 +10,7 @@ module.exports = function(eleventyConfig) {
     .use(require('markdown-it-footnote'))
     .use(require('markdown-it-bracketed-spans'))
     .use(require('markdown-it-attrs'))
+    .use(require('markdown-it-emoji'))
     .use(function(md) {
         // Recognize Mediawiki links ([[text]])
         md.linkify.add("[[", {
