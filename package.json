@@ -3,8 +3,8 @@
   "version": "1.0.0",
   "description": "A starter site for building a mind garden in eleventy.",
   "scripts": {
-    "start": "eleventy --serve --quiet",
-    "compile": "eleventy"
+    "start": "npx @11ty/eleventy --serve --quiet",
+    "compile": "npx @11ty/eleventy"
   },
   "repository": {
     "type": "git",
