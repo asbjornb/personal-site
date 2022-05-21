@@ -12,4 +12,7 @@ for /d %%i in ("*") do rmdir "%%i" /s/q
 for /F "delims=" %%i in ('dir /b') do del "%%i" /s/q
 cd ..
 call npm run compile
-xcopy _site ".\..\static-site-content" /Y /E
+cd ".\..\static-site-content"
+for /d %%i in ("*") do rmdir "%%i" /s/q
+for /F "delims=" %%i in ('dir /b') do if not "%%i"=="LICENSE.md" del "%%i" /s/q
+xcopy ".\..\personal-site\_site" . /Y /E
